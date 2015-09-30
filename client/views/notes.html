@@ -1,0 +1,15 @@
+<template name="notes">
+  {{#if notes.count}}
+    <ul>
+      {{#each notes}}
+        <li>
+          <span class="note">{{firstLineOfBody body}}</span><button class="no-button"><i class="fa fa-trash-o fa-lg"></i></button>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="text-center">
+      There are no notes available to show...
+    </div>
+  {{/if}}
+</template>

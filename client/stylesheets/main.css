@@ -1,0 +1,30 @@
+body {
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+textarea {
+  height: 300px;
+}
+
+.note {
+  cursor: pointer;
+}
+
+ul {
+  list-style: initial;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.fa-lg {
+  vertical-align: 0;
+}
