@@ -3,7 +3,7 @@
     <ul>
       {{#each notes}}
         <li>
-          <span class="note">{{firstLineOfBody body}}</span><button class="no-button"><i class="fa fa-trash-o fa-lg"></i></button>
+          <button class="no-button" data-action="open">{{firstLineOfBody body}}</button><button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button>
         </li>
       {{/each}}
     </ul>

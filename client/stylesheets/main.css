@@ -10,10 +10,6 @@ textarea {
   height: 300px;
 }
 
-.note {
-  cursor: pointer;
-}
-
 ul {
   list-style: initial;
 }

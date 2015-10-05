@@ -1,10 +1,10 @@
 Template.notes.events({
-  'click span': function (event, template) {
+  'click [data-action=open]': function (event, template) {
     $('form textarea').val(this.body);
     $('form input[type="hidden"]').val(this._id);
   },
 
-  'click button': function (event, template) {
+  'click [data-action=remove]': function (event, template) {
     if (confirm('Do you really want to remove this note?')) {
       Notes.remove({ _id: this._id });
     }
