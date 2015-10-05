@@ -16,6 +16,10 @@ Template.notes.helpers({
     return body.split('\n')[0];
   },
 
+  formattedModifiedAt: (modifiedAt) => {
+    return moment(modifiedAt).format('L');
+  },
+
   notes: () => {
     return Notes.find({}, { sort: { modifiedAt: -1 } });
   }

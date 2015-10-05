@@ -3,7 +3,9 @@
     <ul>
       {{#each notes}}
         <li>
-          <button class="no-button" data-action="open">{{firstLineOfBody body}}</button><button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button>
+          <button class="no-button" data-action="open">{{firstLineOfBody body}}</button>
+          <span class="modified-at-date">- {{formattedModifiedAt modifiedAt}}</span>
+          <button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button>
         </li>
       {{/each}}
     </ul>

@@ -24,3 +24,8 @@ ul {
 .fa-lg {
   vertical-align: 0;
 }
+
+.modified-at-date {
+  font-size: 11px;
+  font-style: italic;
+}
